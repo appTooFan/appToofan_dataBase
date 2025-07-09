@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Lalezar';
+  src: url('../fonts/Lalezar-Regular.ttf')
+}
+@font-face {
+  font-family: 'Lateef';
+  src: url('../fonts/Lateef-Bold.ttf')
+}
+@font-face {
+  font-family: 'myfonts';
+  src: url('../fonts/font.otf')
+}
+@font-face {
+  font-family: 'Almarai-Bold';
+  src: url('../fonts/Almarai-Bold.ttf')
+}
+@font-face {
+  font-family: 'Almarai-ExtraBold';
+  src: url('../fonts/Almarai-ExtraBold.ttf')
+}
+@font-face {
+  font-family: 'Almarai-Light';
+  src: url('../fonts/Almarai-Light.ttf')
+}
+@font-face {
+  font-family: 'Almarai-Regula';
+  src: url('../fonts/Almarai-Regula.ttf')
+}
+@font-face {
+  font-family: 'DINNextLTW23';
+  src: url('../fonts/DINNextLTW23.ttf')
+}
+@font-face {
+  font-family: 'DroidKufi-Bold';
+  src: url('../fonts/DroidKufi-Bold.ttf')
+}
+@font-face {
+  font-family: 'DroidKufi-Regular';
+  src: url('../fonts/DroidKufi-Regular.ttf')
+}
+@font-face {
+  font-family: 'ElMessiri';
+  src: url('../fonts/ElMessiri-VariableFont_wght.ttf')
+}
+@font-face {
+  font-family: 'ReadexPro';
+  src: url('../fonts/ReadexPro-VariableFont_HEXP,wght.ttf')
+}
