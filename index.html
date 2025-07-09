@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="تطبيق الطوفان - تطبيق تعليمي شامل لطلاب الثالث الثانوي يشمل اختبارات، مراجعات، تفاعلات كيميائية، وتجارب علمية." />
+<meta name="keywords" content="الطوفان, تطبيق الطوفان, ثالث ثانوي, تعليم اليمن, مراجعات, اختبارات, كيمياء, فيزياء, ملازم" />
+<meta name="author" content="تطبيق الطوفان" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="apptoofan.mooo.com/TooFan/index.html/" />
+
+  <title>تطبيق الطوفان</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all" />
+  
+  <style>
+    :root {
+      --app-color: #37474F;
+      --background-color: #F1F7FB;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--background-color);
+      color: #222;
+    }
+
+    header {
+      background: var(--app-color);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .app-icon {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      background-image: url("../img/cap.svg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position-y: 50%
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 0;
+      font-family: myfonts;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin: 0;
+      font-family: Almarai-Bold;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: var(--app-color);
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: DINNextLTW23;
+    }
+
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .features li {
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 10px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: DINNextLTW23;
+    }
+
+    .features li i {
+      color: var(--app-color);
+      font-size: 1.2rem;
+      
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin: 30px auto;
+      background: var(--app-color);
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: background 0.3s ease;
+      font-family: Lalezar;
+    }
+
+    .download-btn:hover {
+      background: #263238;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+      background-color: #eaf2f8;
+      margin-top: 40px;
+      font-family: DINNextLTW23;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <img class="app-icon" src="img/TooFan.png" alt="أيقونة التطبيق" />
+    <h1>تطبيق الطوفان</h1>
+    <p>رفيقك المثالي للثانوية العامة - الثالث الثانوي</p>
+  </header>
+
+  <div class="container">
+
+    <section class="features" data-aos="fade-up">
+      <h2><i class="fas fa-star"></i> مميزات التطبيق</h2>
+      <ul>
+        <li><i class="fas fa-pen-alt"></i> اختبارات إلكترونية تفاعلية بعد كل درس.</li>
+        <li><i class="fas fa-clipboard-check"></i> مراجعات شاملة تركز على النقاط المهمة.</li>
+        <li><i class="fas fa-file-alt"></i> نماذج اختبارات وزارية لسنوات سابقة.</li>
+        <li><i class="fas fa-flask"></i> معمل كيميائي تفاعلي.</li>
+        <li><i class="fas fa-atom"></i> تجارب فيزيائية وأحيائية تفاعلية.</li>
+        <li><i class="fas fa-cube"></i> مجسمات ثلاثية الأبعاد لأجزاء الجسم.</li>
+        <li><i class="fas fa-book"></i> مستودع شامل للكتب والملازم.</li>
+        <li><i class="fas fa-language"></i> ميزة طليق لتعلم اللغة الإنجليزية.</li>
+        <li><i class="fab fa-whatsapp"></i> واتساب مدمج للتواصل مع الزملاء.</li>
+        <li><i class="fas fa-bolt"></i> مؤشر تفاعلي ذكي لردود الأسئلة.</li>
+      </ul>
+    </section>
+
+    <section class="gallery" data-aos="zoom-in">
+      <h2><i class="fas fa-image"></i> صور من التطبيق</h2>
+      <img src="img/1.jpg" alt="صورة 1">
+      <img src="img/2.jpg" alt="صورة 2">
+      <img src="img/3.jpg" alt="صورة 3">
+      <img src="img/4.jpg" alt="صورة 4">
+      <img src="img/5.jpg" alt="صورة 5">
+      <img src="img/6.jpg" alt="صورة 6">
+      <img src="img/7.jpg" alt="صورة 7">
+      <img src="img/8.jpg" alt="صورة 8">
+      <img src="img/9.jpg" alt="صورة 1">
+      <img src="img/10.jpg" alt="صورة 2">
+      <img src="img/11.jpg" alt="صورة 3">
+      <img src="img/12.jpg" alt="صورة 4">
+      <img src="img/13.jpg" alt="صورة 4">
+      <img src="img/14.jpg" alt="صورة 4">
+      <img src="img/15.jpg" alt="صورة 4">
+    </section>
+
+    <div style="text-align:center;" data-aos="fade-up">
+      <a href="https://example.com/toofan.apk" class="download-btn"><i class="fas fa-download"></i> تحميل التطبيق الآن</a>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 تطبيق الطوفان - جميع الحقوق محفوظة
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+
+</body>
+</html>
