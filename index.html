@@ -3,31 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="تطبيق الطوفان - تطبيق تعليمي شامل لطلاب الثالث الثانوي يشمل اختبارات، مراجعات، تفاعلات كيميائية، وتجارب علمية." />
-<meta name="keywords" content="الطوفان, تطبيق الطوفان, ثالث ثانوي, تعليم اليمن, مراجعات, اختبارات, كيمياء, فيزياء, ملازم" />
-<meta name="author" content="تطبيق الطوفان" />
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://apptoofan.github.io/appToofan_dataBase/" />
-<link rel="icon" href="img/favicon.png" type="image/png">
-
+  <meta name="description" content="تطبيق الطوفان - تطبيق تعليمي شامل ومجاني بالكامل لطلاب الثالث الثانوي في اليمن. يشمل اختبارات، مراجعات، تفاعلات كيميائية، تجارب علمية، كتب PDF، ملازم، أرقام الجلوس، نتائج، نماذج وزارية، المنهج اليمني، وبدون أي رسوم.">
+  <meta name="keywords" content="تطبيق الطوفان, ثالث ثانوي, ملازم ثالث ثانوي, مراجعات ثالث ثانوي, اختبارات ثالث ثانوي, نماذج وزارية, تحميل ملازم اليمن, كتب المنهج اليمني PDF, تعليم اليمن, وزارة التربية والتعليم اليمن, ارقام الجلوس, جدول الامتحانات, ثالث ثانوي اليمن, كيمياء ثالث ثانوي, فيزياء ثالث ثانوي, رياضيات ثالث ثانوي, انجليزي ثالث ثانوي, الاحياء ثالث ثانوي, مراجعة نهائية, ملخصات الدروس, الصف الثالث الثانوي اليمني, 2025, دليل الطالب, الامتحانات النهائية, اسئلة وزارية, دروس تفاعلية, تعليم عن بعد في اليمن, التعليم الإلكتروني اليمني, طلاب الثانوية العامة اليمنية, تحميل المناهج الدراسية اليمنية, حل اختبارات الوزارة, بنك الاسئلة ثالث ثانوي اليمن, وزارة التربية اليمن, المنهج اليمني الحديث, مواد علمية ثالث ثانوي, حلول ملازم ثالث ثانوي, دروس مشروحة ثالث ثانوي, ثالث ثانوي قسم علمي, ثالث ثانوي قسم أدبي, تعلم اونلاين اليمن, الامتحان النهائي, تعليم مجاني اليمن, تطبيق تعليمي مجاني, تطبيق بدون اشتراك, افضل تطبيق مجاني يمني, بدون دفع, مجاني بالكامل, الطوفان المجاني, التعليم المجاني اليمن">
+  <meta name="author" content="تطبيق الطوفان">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://apptoofan.github.io/appToofan_dataBase/">
+  <link rel="icon" href="img/favicon.png" type="image/png">
   <title>تطبيق الطوفان</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all" />
-  
+  <link rel="stylesheet" href="css/fonts.css" type="text/css" media="all">
   <style>
     :root {
       --app-color: #37474F;
       --background-color: #F1F7FB;
     }
-
     body {
       margin: 0;
       font-family: 'Cairo', sans-serif;
       background-color: var(--background-color);
       color: #222;
     }
-
     header {
       background: var(--app-color);
       color: white;
@@ -39,7 +35,6 @@
       justify-content: center;
       gap: 20px;
     }
-
     .app-icon {
       width: 130px;
       height: 130px;
@@ -49,31 +44,26 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       background-color: white;
       background-image: url("img/cap.svg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position-y: 50%
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: 50%;
     }
-
     header h1 {
       font-size: 2.4rem;
       margin: 0;
       font-family: myfonts;
     }
-
     header p {
       font-size: 1.1rem;
       opacity: 0.9;
       margin: 0;
       font-family: Almarai-Bold;
     }
-
     .container {
       max-width: 900px;
       margin: auto;
       padding: 20px;
-      
     }
-
     h2 {
       font-size: 1.6rem;
       color: var(--app-color);
@@ -83,12 +73,10 @@ background-position-y: 50%
       gap: 10px;
       font-family: DINNextLTW23;
     }
-
     .features ul {
       list-style: none;
       padding: 0;
     }
-
     .features li {
       background: #fff;
       padding: 12px;
@@ -101,30 +89,24 @@ background-position-y: 50%
       gap: 10px;
       font-family: DINNextLTW23;
     }
-
     .features li i {
       color: var(--app-color);
       font-size: 1.2rem;
-      
     }
-
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 12px;
     }
-
     .gallery img {
       width: 100%;
       border-radius: 10px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
-
     .gallery img:hover {
       transform: scale(1.03);
     }
-
     .download-btn {
       display: inline-block;
       margin: 30px auto;
@@ -139,11 +121,9 @@ background-position-y: 50%
       transition: background 0.3s ease;
       font-family: Lalezar;
     }
-
     .download-btn:hover {
       background: #263238;
     }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -153,7 +133,6 @@ background-position-y: 50%
       margin-top: 40px;
       font-family: DINNextLTW23;
     }
-
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.8rem;
@@ -170,7 +149,6 @@ background-position-y: 50%
   </header>
 
   <div class="container">
-
     <section class="features" data-aos="fade-up">
       <h2><i class="fas fa-star"></i> مميزات التطبيق</h2>
       <ul>
@@ -189,26 +167,68 @@ background-position-y: 50%
 
     <section class="gallery" data-aos="zoom-in">
       <h2><i class="fas fa-image"></i> صور من التطبيق</h2>
+      <!-- صور التطبيق -->
       <img src="img/1.jpg" alt="صورة 1">
       <img src="img/2.jpg" alt="صورة 2">
       <img src="img/3.jpg" alt="صورة 3">
       <img src="img/4.jpg" alt="صورة 4">
       <img src="img/5.jpg" alt="صورة 5">
       <img src="img/6.jpg" alt="صورة 6">
-      <img src="img/7.jpg" alt="صورة 7">
-      <img src="img/8.jpg" alt="صورة 8">
-      <img src="img/9.jpg" alt="صورة 1">
-      <img src="img/10.jpg" alt="صورة 2">
-      <img src="img/11.jpg" alt="صورة 3">
-      <img src="img/12.jpg" alt="صورة 4">
-      <img src="img/13.jpg" alt="صورة 4">
-      <img src="img/14.jpg" alt="صورة 4">
-      <img src="img/15.jpg" alt="صورة 4">
+<img src="img/7.jpg" alt="صورة 7">
+<img src="img/8.jpg" alt="صورة 8">
+<img src="img/9.jpg" alt="صورة 1">
+<img src="img/10.jpg" alt="صورة 2">
+<img src="img/11.jpg" alt="صورة 3">
+<img src="img/12.jpg" alt="صورة 4">
+<img src="img/13.jpg" alt="صورة 4">
+<img src="img/14.jpg" alt="صورة 4">
+<img src="img/15.jpg" alt="صورة 4">
     </section>
 
     <div style="text-align:center;" data-aos="fade-up">
       <a href="https://example.com/toofan.apk" class="download-btn"><i class="fas fa-download"></i> تحميل التطبيق الآن</a>
     </div>
+
+    <section class="seo-section" data-aos="fade-up">
+  <div style="
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 30px 25px;
+    background: linear-gradient(to bottom right, #ffffff, #f5fbff);
+    border: 2px solid #dce9f3;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    font-family: DINNextLTW23;
+    line-height: 2;
+    font-size: 1.05rem;
+    color: #37474F;
+    line-height: 1.5;
+  ">
+    <h2 style="
+      color: #37474F;
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    ">
+      <i class="fas fa-graduation-cap" style="color: #37474F;"></i>
+      دليل الطالب اليمني للثالث الثانوي
+    </h2>
+    <p style="margin-bottom: 15px;">
+      <strong>تطبيق الطوفان</strong> هو التطبيق التعليمي اليمني الوحيد <strong style="color: green;">المجاني بالكامل</strong> بدون دفع أو اشتراكات. يقدم لك كل ما تحتاجه من:
+    </p>
+    <ul style="list-style: none; padding: 0; margin: 0 0 15px 0;">
+      <li><i class="fas fa-book-open" style="color: #37474F; margin-left: 10px;"></i> مراجعات شاملة لجميع المواد</li>
+      <li><i class="fas fa-file-alt" style="color: #37474F; margin-left: 10px;"></i> نماذج اختبارات وزارية مع الإجابات</li>
+      <li><i class="fas fa-download" style="color: #37474F; margin-left: 10px;"></i> كتب وملازم PDF للمنهج اليمني</li>
+      <li><i class="fas fa-user-graduate" style="color: #37474F; margin-left: 10px;"></i> أرقام الجلوس وجداول الامتحانات</li>
+    </ul>
+    <p style="margin-bottom: 0;">
+      التطبيق مصمم ليخدم <strong>طلاب القسم العلمي والأدبي</strong> ويغنيهم عن شراء الكتب الورقية. كل شيء متاح <strong style="color: green;">بجودة عالية ومجانًا 100%</strong>. احصل على محتوى محدث ومتوافق مع منهج وزارة التربية والتعليم اليمنية!
+    </p>
+  </div>
+</section>
 
   </div>
 
