@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://apptoofan.github.io/appToofan_dataBase/sitemap.xml
