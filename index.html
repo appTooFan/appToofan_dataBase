@@ -291,6 +291,44 @@
     .faq-answer.show {
       max-height: 600px; /* كافية لعرض المحتوى */
     }
+   .social-section {
+  text-align: center;
+  margin: 50px 0 20px;
+  padding: 0 15px;
+  /* مسافة من الحواف */
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-links .social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  color: white;
+  background: var(--app-color);
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: DINNextLTW23;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.social-links .social-btn i {
+  font-size: 1.3rem;
+}
+
+.social-links .social-btn:hover {
+  background: #263238;
+  /* أغمق من اللون الأساسي */
+  transform: translateY(-3px);
+}
   </style>
 </head>
 <body>
@@ -448,6 +486,17 @@
     </section>
 
   </div>
+<section class="social-section" data-aos="fade-up">
+  <h2><i class="fas fa-share-alt"></i> تواصل معنا</h2>
+  <div class="social-links">
+    <a href="https://t.me/App_TooFan" target="_blank" class="social-btn"><i class="fab fa-telegram-plane"></i> تيلجرام</a>
+    <a href="https://www.whatsapp.com/channel/0029VbBbk7W47XeLKac6Uu2s" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i> واتساب</a>
+    <a href="https://youtube.com/@apptoofan?si=h3YxrJb6loAF_Gmw" target="_blank" class="social-btn"><i class="fab fa-youtube"></i> يوتيوب</a>
+  </div>
+</section>
+
+  </div>
+</section>
 
   <footer>
     جميع الحقوق محفوظة © 2025 تطبيق الطوفان للثالث الثانوي اليمني
