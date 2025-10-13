@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تطبيق الطوفان للثالث ثانوي</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="toofan_squiz.css">
+</head>
+
+<body>
+  <div class="container">
+  <div class="quiz-app">
+    <div class="titleLesson">
+  <div>
+    <img src="chevron-right.svg">
+    <p>اختبار من الطوفان</p>
+  </div>
+  <div class="countQuiz">عدد الاسئله :<span>_</span></div>
+</div>
+<div class="conQuiz">
+  <div class="infodata">
+    <div class="infoQuiz">
+      <div class="time">الوقت : <span>00:00</span></div>
+      <div class="years">سؤال عام : <span></span></div>
+      <div class="degree">درجه السؤال : <span></span></div>
+    </div>
+    <div class="numQuiz" id="numQuiz">
+      
+    </div>
+  </div>
+  <div class="dataQuiz">
+    <div class="titleQuiz">
+    </div>
+    <div class="choosesQuiz">
+      
+      
+    </div>
+    <div class="clarify"></div>
+  </div>
+</div>
+<div class="footerTools">
+  <div class="previousQuiz">
+    <img src="arrow-right.svg">
+    <span>السابق</span>
+  </div>
+  <div class="testDelivery">تسليم</div>
+  <div class="nextQuiz">
+    <span>التالي</span>
+    <img src="arrow-left.svg">
+  </div>
+</div>
+</div>
+  </div>
+<script>
+function fixHeight() {
+  document.body.style.height = window.innerHeight + "px";
+}
+window.addEventListener("resize", fixHeight);
+fixHeight();
+
+</script>
+
+
+
+  <script src="toofan_squiz.js">
+    
+  </script>
+</body>
+
+</html>
