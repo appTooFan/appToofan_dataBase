@@ -24,14 +24,25 @@ body {
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  
   position: relative;
   direction: ltr;
   overflow: hidden;
   background-color: var(--background-color);
 }
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+}
 
+/* عند تفعيل الحل الديناميكي */
+body.fixed-height {
+  height: var(--real-height);
+  min-height: var(--real-height);
+}
 /* دعم للمتصفحات القديمة التي لا تعرف dvh */
 @supports not (height: 100dvh) {
   body {

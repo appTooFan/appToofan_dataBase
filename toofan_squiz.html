@@ -54,13 +54,18 @@
 </div>
   </div>
 <script>
-function fixHeight() {
-  document.body.style.height = window.innerHeight + "px";
-}
-window.addEventListener("resize", fixHeight);
-fixHeight();
+  // حل نهائي لمشكلة 100vh في متصفحات الجوال (خصوصاً Chrome وSamsung Internet)
+  function fixFullHeight() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--real-height', `${vh * 100}px`);
+    document.body.classList.add('fixed-height');
+  }
 
+  window.addEventListener('resize', fixFullHeight);
+  window.addEventListener('orientationchange', fixFullHeight);
+  fixFullHeight();
 </script>
+
 
 
 
