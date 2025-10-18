@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="علي أمير يحيى الشهاري - مبرمج ومصمم مواقع وتطبيقات، طالب طب بشري في جامعة العلوم والتكنولوجيا، مسلم شيعي من حركة أنصار الله الحوثيين، أسعى للشهادة في سبيل الله" />
+  
+  <!-- كلمات مفتاحية موسعة -->
+  <meta name="keywords" content="
+  علي أمير يحيى الشهاري, مبرمج يمني, مصمم مواقع يمني, مبرمج تطبيقات يمني, طالب طب بشري اليمن,
+  جامعة العلوم والتكنولوجيا اليمن, مسلم شيعي, أنصار الله الحوثيين, برمجة مواقع, تصميم تطبيقات,
+  تطوير ويب, برمجة أندرويد, برمجة iOS, لغة جافا, لغة بايثون, لغة جافا سكريبت, HTML, CSS,
+  تطوير برامج, تصميم جرافيك, فريلانسر يمني, عمل حر, مشاريع برمجية, برمجة متقدمة,
+  شيعة الإمام علي, موالي لأنصار الله, شهيد في سبيل الله, مقاومة الصهاينة, فلسطين حرة,
+  اليمن العربي, الثورة اليمنية, قائد الثورة, عبد الملك الحوثي, أنصار الله المجاهدين,
+  الموت لأمريكا, الموت لإسرائيل, العزة للإسلام, تحرير فلسطين, فلسطين عربية,
+  الشيعة في اليمن, مدرسة أهل البيت, الإمام علي بن أبي طالب, الإمام الحسين,
+  كربلاء, عاشوراء, الزهراء, الولاية, التبري, التشيع, الجهاد, الشهادة, الاستشهاد,
+  فلسطين المحتلة, القدس عاصمة فلسطين, الأقصى في خطر, غزة المقاومة, حزب الله,
+  محور المقاومة, تحرير المقدسات, صمود اليمن, صنعاء عاصمة الثورة,
+  قصف العدو الصهيوني, دعم المقاومة, تصفية الكيان الصهيوني, فلسطين من النهر إلى البحر
+  " />
+  
+  <meta name="author" content="علي أمير يحيى الشهاري" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:title" content="علي أمير يحيى الشهاري | شهيد في سبيل الله - مبرمج ومقاوم" />
+  <meta property="og:description" content="مسلم شيعي من حركة أنصار الله، أسعى للشهادة في سبيل الله، مبرمج ومصمم مواقع وتطبيقات، طالب طب بشري" />
+  <meta property="og:image" content="https://example.com/profile.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="علي أمير يحيى الشهاري | شهيد في سبيل الله - مبرمج ومقاوم" />
+  <meta name="twitter:description" content="مسلم شيعي من حركة أنصار الله، أسعى للشهادة في سبيل الله، مبرمج ومصمم مواقع وتطبيحات" />
+  <meta name="twitter:image" content="https://example.com/profile.jpg" />
+
+  <link rel="canonical" href="https://example.com" />
+  
+  <!-- أيقونة الموقع (Favicon) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  
+  <title>علي أمير يحيى الشهاري | شهيد في سبيل الله - مبرمج ومقاوم من أنصار الله</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  
+  <!-- استيراد الخطوط -->
+  <style>
+    @font-face {
+      font-family: 'Lalezar';
+      src: url('../fonts/Lalezar-Regular.ttf');
+    }
+    @font-face {
+      font-family: 'Lateef';
+      src: url('../fonts/Lateef-Bold.ttf');
+    }
+    @font-face {
+      font-family: 'myfonts';
+      src: url('../fonts/font.otf');
+    }
+    @font-face {
+      font-family: 'Almarai-Bold';
+      src: url('../fonts/Almarai-Bold.ttf');
+    }
+    @font-face {
+      font-family: 'Almarai-ExtraBold';
+      src: url('../fonts/Almarai-ExtraBold.ttf');
+    }
+    @font-face {
+      font-family: 'Almarai-Light';
+      src: url('../fonts/Almarai-Light.ttf');
+    }
+    @font-face {
+      font-family: 'Almarai-Regular';
+      src: url('../fonts/Almarai-Regular.ttf');
+    }
+    @font-face {
+      font-family: 'DINNextLTW23';
+      src: url('../fonts/DINNextLTW23.ttf');
+    }
+    @font-face {
+      font-family: 'DroidKufi-Bold';
+      src: url('../fonts/DroidKufi-Bold.ttf');
+    }
+    @font-face {
+      font-family: 'DroidKufi-Regular';
+      src: url('../fonts/DroidKufi-Regular.ttf');
+    }
+    @font-face {
+      font-family: 'ElMessiri';
+      src: url('../fonts/ElMessiri-VariableFont_wght.ttf');
+    }
+    @font-face {
+      font-family: 'ReadexPro';
+      src: url('../fonts/ReadexPro-VariableFont_HEXP,wght.ttf');
+    }
+  </style>
+
+  <style>
+    :root {
+      --app-color: #37474F;
+      --background-color: #F1F7FB;
+    }
+    body {
+      margin: 0;
+      font-family: 'DINNextLTW23', sans-serif;
+      background-color: var(--background-color);
+      color: #222;
+    }
+    header {
+      background: var(--app-color);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    .profile-icon {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      background-color: white;
+    }
+    header h1 {
+      font-size: 2.4rem;
+      margin: 0;
+      font-family: 'myfonts';
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      margin: 0;
+      font-family: 'Almarai-Bold';
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      font-size: 1.6rem;
+      color: var(--app-color);
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'DINNextLTW23';
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+    }
+    .features li {
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 10px;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'DINNextLTW23';
+    }
+    .features li i {
+      color: var(--app-color);
+      font-size: 1.2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+    .video-section {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      background: #000;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .contact-btn {
+      display: inline-block;
+      margin: 30px auto;
+      background: var(--app-color);
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: background 0.3s ease;
+      font-family: 'Lalezar';
+    }
+    .contact-btn:hover {
+      background: #263238;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+      background-color: #eaf2f8;
+      margin-top: 40px;
+      font-family: 'DINNextLTW23';
+    }
+    
+    /* FAQ style */
+    .faq-container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: linear-gradient(to bottom right, #ffffff, #f5fbff);
+      border: 2px solid #dce9f3;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      font-family: 'DINNextLTW23';
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #37474F;
+      padding: 30px 25px;
+    }
+    .faq-question {
+      cursor: pointer;
+      position: relative;
+      padding-right: 30px;
+      margin-bottom: 12px;
+      font-weight: 600;
+      user-select: none;
+      font-family: 'Almarai-Bold';
+    }
+    .faq-question::after {
+      content: "\f078";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: transform 0.3s ease;
+      font-size: 0.9rem;
+      color: var(--app-color);
+    }
+    .faq-question.active::after {
+      content: "\f077";
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      padding-right: 5px;
+      margin-bottom: 20px;
+      font-family: 'DINNextLTW23';
+    }
+    .faq-answer.show {
+      max-height: 600px;
+    }
+    .social-section {
+      text-align: center;
+      margin: 50px 0 20px;
+      padding: 0 15px;
+    }
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .social-links .social-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 30px;
+      color: white;
+      background: var(--app-color);
+      font-size: 1rem;
+      text-decoration: none;
+      font-family: 'DINNextLTW23';
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+    .social-links .social-btn i {
+      font-size: 1.3rem;
+    }
+    .social-links .social-btn:hover {
+      background: #263238;
+      transform: translateY(-3px);
+    }
+    
+    /* مهارات تقنية - بنفس تصميم قسم نبذة عني */
+    .skills-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .skill-item {
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'DINNextLTW23';
+    }
+    .skill-item i {
+      color: var(--app-color);
+      font-size: 1.2rem;
+      width: 25px;
+      text-align: center;
+    }
+    
+    /* قسم الهوية العقائدية - بنفس تصميم قسم نبذة عني */
+    .ideology-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .ideology-item {
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'DINNextLTW23';
+    }
+    .ideology-item i {
+      color: var(--app-color);
+      font-size: 1.2rem;
+      width: 25px;
+      text-align: center;
+    }
+    
+    /* قسم الشهادة - تصميم خاص */
+    .martyr-section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin: 20px 0;
+      text-align: center;
+      border-right: 4px solid var(--app-color);
+    }
+    .martyr-text {
+      font-family: 'DINNextLTW23';
+      font-size: 1.3rem;
+      color: var(--app-color);
+      font-weight: bold;
+    }
+    .resistance-text {
+      font-family: 'Almarai-Bold';
+      font-size: 1rem;
+      color: #37474F;
+      line-height: 1.6;
+    }
+    
+    /* قسم المقاومة - بنفس تصميم القوائم */
+    .resistance-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .resistance-item {
+      background: #fff;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'DINNextLTW23';
+    }
+    .resistance-item i {
+      color: var(--app-color);
+      font-size: 1.2rem;
+      width: 25px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <img class="profile-icon" src="profile.jpg" alt="صورة علي أمير يحيى الشهاري" />
+    <h1>علي أمير يحيى الشهاري</h1>
+    <p>مسلم شيعي من حركة أنصار الله | أسعى للشهادة في سبيل الله</p>
+    <p>مبرمج ومصمم مواقع وتطبيقات | طالب طب بشري في جامعة العلوم والتكنولوجيا</p>
+  </header>
+
+  <div class="container">
+    <!-- قسم نبذة عني -->
+    <section class="features" data-aos="fade-up">
+      <h2><i class="fas fa-user"></i> نبذة عني</h2>
+      <ul>
+        <li><i class="fas fa-user-tag"></i> الاسم: علي أمير يحيى الشهاري</li>
+        <li><i class="fas fa-phone"></i> رقم الهاتف: 774769458</li>
+        <li><i class="fas fa-graduation-cap"></i> طالب طب بشري في جامعة العلوم والتكنولوجيا</li>
+        <li><i class="fas fa-code"></i> مبرمج ومصمم مواقع وتطبيقات محترف</li>
+        <li><i class="fas fa-laptop-code"></i> أجيد جميع لغات البرمجة والتطوير</li>
+        <li><i class="fas fa-mosque"></i> مسلم شيعي من شيعة الإمام علي عليه السلام</li>
+        <li><i class="fas fa-fist-raised"></i> مناصر لحركة أنصار الله الحوثيين</li>
+      </ul>
+    </section>
+
+    <!-- قسم الهوية العقائدية بنفس تصميم نبذة عني -->
+    <section class="features" data-aos="fade-up">
+      <h2><i class="fas fa-heart"></i> هويتي العقائدية</h2>
+      <div class="ideology-container">
+        <div class="ideology-item">
+          <i class="fas fa-mosque"></i>
+          مسلم شيعي أتبع مذهب أهل البيت عليهم السلام
+        </div>
+        <div class="ideology-item">
+          <i class="fas fa-hand-fist"></i>
+          موالي لحركة أنصار الله وقائدها عبد الملك الحوثي
+        </div>
+        <div class="ideology-item">
+          <i class="fas fa-book-quran"></i>
+          أتولى الإمام علي بن أبي طالب والأئمة المعصومين
+        </div>
+        <div class="ideology-item">
+          <i class="fas fa-scale-balanced"></i>
+          أؤمن بالعدالة الإلهية وضرورة مقاومة الظلم
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الشهادة -->
+    <section data-aos="fade-up">
+      <div class="martyr-section">
+        <div class="martyr-text">أسعى إن شاء الله لأن أكون شهيداً في سبيل الله</div>
+        <div class="resistance-text">
+          "والذين جاهدوا فينا لنهدينهم سبلنا وإن الله لمع المحسنين" - القرآن الكريم
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المقاومة بنفس تصميم القوائم -->
+    <section class="features" data-aos="fade-up">
+      <h2><i class="fas fa-crosshairs"></i> موقفي من القضية الفلسطينية</h2>
+      <div class="resistance-container">
+        <div class="resistance-item">
+          <i class="fas fa-mosque"></i>
+          أؤمن بتحرير فلسطين من النهر إلى البحر
+        </div>
+        <div class="resistance-item">
+          <i class="fas fa-shield-alt"></i>
+          أدعم المقاومة في فلسطين ولبنان واليمن
+        </div>
+        <div class="resistance-item">
+          <i class="fas fa-flag"></i>
+          القدس عاصمة فلسطين الأبدية
+        </div>
+        <div class="resistance-item">
+          <i class="fas fa-fist-raised"></i>
+          الموت لأمريكا، الموت لإسرائيل، اللعنة على اليهود
+        </div>
+        <div class="resistance-item">
+          <i class="fas fa-handshake"></i>
+          أؤمن بوحدة محور المقاومة
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم المهارات التقنية بنفس تصميم نبذة عني -->
+    <section class="features" data-aos="fade-up">
+      <h2><i class="fas fa-laptop-code"></i> لغات البرمجة التي أتقنها</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <i class="fab fa-html5"></i>
+          HTML5 - تطوير هيكل المواقع
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-css3-alt"></i>
+          CSS3 - تصميم وتنسيق المواقع
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js"></i>
+          JavaScript - برمجة الويب التفاعلية
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-python"></i>
+          Python - برمجة تطبيقات متقدمة
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-java"></i>
+          Java - تطوير تطبيقات أندرويد
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-swift"></i>
+          Swift - تطوير تطبيقات iOS
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database"></i>
+          SQL - قواعد البيانات وإدارتها
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-php"></i>
+          PHP - برمجة الخوادم
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2><i class="fas fa-image"></i> معرض الصور</h2>
+      <!-- يمكنك إضافة صورك الشخصية هنا -->
+      <img src="img2/1.jpg" alt="صورة 1" />
+      <img src="img2/2.jpg" alt="صورة 2" />
+      <img src="img2/4.jpg" alt="صورة 3" />
+      <img src="img2/3.jpg" alt="صورة 4" />
+      <img src="img2/5.jpg" alt="صورة 5" />
+      <img src="img2/7.jpg" alt="صورة 6" />
+      <img src="img2/8.jpg" alt="صورة 7" />
+      
+    </section>
+
+   
+
+    <div style="text-align:center;" data-aos="fade-up">
+      <a href="https://wa.me/967774769458" class="contact-btn" target="_blank">
+        تواصل معي عبر واتساب
+      </a>
+    </div>
+
+    <section class="faq-container" data-aos="fade-up">
+      <h2><i class="fas fa-question-circle"></i> الأسئلة الشائعة</h2>
+      
+      <div class="faq-item">
+        <div class="faq-question">ما هي مجالات البرمجة التي تتخصص فيها؟</div>
+        <div class="faq-answer">أتخصص في تطوير مواقع الويب، تطبيقات الهواتف (أندرويد و iOS)، وتطوير البرامج باستخدام لغات متعددة مثل Python و Java و C++.</div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">كيف تجمع بين دراسة الطب والبرمجة؟</div>
+        <div class="faq-answer">أدير وقتي بشكل منظم، حيث أخصص ساعات محددة للدراسة الأكاديمية وأخرى للعمل على المشاريع البرمجية، وأعتبر البرمجة شغفي وليس مجرد عمل.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">ما هي رسالتك الشخصية؟</div>
+        <div class="faq-answer">أؤمن بأن العلم والمعرفة هما أساس تقدم الأمم، وأسعى لاستخدام مهاراتي البرمجية في خدمة مجتمعي ووطني اليمن، والمساهمة في مقاومة قوى الاستكبار العالمي.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">ما هو موقفك من القضية الفلسطينية؟</div>
+        <div class="faq-answer">أعتبر القضية الفلسطينية قضيتي المركزية، وأؤمن بضرورة تحرير فلسطين من النهر إلى البحر، وأدعم المقاومة بكل الوسائل المتاحة بما فيها الوسائل التقنية والإعلامية.</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question">كيف يمكنني التواصل معك؟</div>
+        <div class="faq-answer">يمكنك التواصل معي عبر الواتساب على الرقم 774769458، أو عبر قنوات التواصل الاجتماعي المذكورة في الموقع.</div>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="social-section" data-aos="fade-up">
+    <h2><i class="fas fa-share-alt"></i> تواصل معي</h2>
+    <div class="social-links">
+      <a href="https://t.me/Ali_Ameer_Alshahary" target="_blank" class="social-btn"><i class="fab fa-telegram-plane"></i> تيلجرام</a>
+      <a href="https://wa.me/967774769458" target="_blank" class="social-btn"><i class="fab fa-whatsapp"></i> واتساب</a>
+      <a href="https://youtube.com/your_channel" target="_blank" class="social-btn"><i class="fab fa-youtube"></i> يوتيوب</a>
+      <a href="https://github.com/your_github" target="_blank" class="social-btn"><i class="fab fa-github"></i> جيت هاب</a>
+    </div>
+  </section>
+
+  <footer>
+    جميع الحقوق محفوظة © 2025 علي أمير يحيى الشهاري<br>
+    مسلم شيعي من حركة أنصار الله - أسعى للشهادة في سبيل الله
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // تفعيل عرض/إخفاء الإجابات عند الضغط على السؤال في FAQ
+    document.querySelectorAll('.faq-question').forEach(question => {
+  question.addEventListener('click', () => {
+    question.classList.toggle('active');
+    const answer = question.nextElementSibling;
+    if (answer.classList.contains('show')) {
+      answer.classList.remove('show');
+      answer.style.maxHeight = null;
+    } else {
+      answer.classList.add('show');
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    }
+  });
+});
+</script>
+</body>
+</html>
