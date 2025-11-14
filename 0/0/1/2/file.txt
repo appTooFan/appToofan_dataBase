@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+	<title>smsreader</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <style type="text/css">
+        .samp {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 8px;
+            font-family: monospace;
+        }
+    </style>
+</head> 
+
+<body> 
+
+<div data-role="page" data-theme="a">
+
+	<div data-role="header" data-position="fixed">
+		<a href='#' class='ui-btn-left' data-icon='arrow-l' data-theme="c" onclick="history.back(); return false">Back</a> 
+		<h1>smsreader</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+
+		<h2>SMS Reader Plugin</h2>
+		<p>هذا البلجن يتيح لك قراءة الرسائل النصية (SMS) من صندوق الوارد باستخدام كود Java عبر DroidScript.</p>
+
+		<p>لاستخدام البلجن، قم أولاً بتحميله أعلى الكود عبر:</p>
+		<div class="samp">app.LoadPlugin( "smsreader" );</div>
+
+		<p>ثم أنشئ كائن البلجن:</p>
+		<div class="samp">plg = app.Createsmsreader();</div>
+
+		<p><b>الوظائف المتاحة:</b></p>
+		<ul>
+			<li><b>GetVersion()</b> – يعيد إصدار البلجن كنص.</li>
+			<li><b>ReadSms()</b> – يقرأ الرسائل من صندوق الوارد ويعيدها على شكل سلسلة نصية.</li>
+		</ul>
+
+		<h3>مثال 1 - الحصول على إصدار البلجن</h3>
+		<div data-role="collapsible" data-collapsed="true" data-mini="true" data-theme="a" data-content-theme="b">
+			<h3>Example - Get Version</h3>
+			<div id="examp1" style="font-size:70%">
+				app.LoadPlugin("smsreader");<br><br>
+
+				function OnStart()<br>
+				{<br>
+				&nbsp;&nbsp;lay = app.CreateLayout("Linear", "VCenter,FillXY");<br>
+				&nbsp;&nbsp;btn = app.CreateButton("Get Version");<br>
+				&nbsp;&nbsp;btn.SetOnTouch(CallPlugin);<br>
+				&nbsp;&nbsp;lay.AddChild(btn);<br><br>
+				&nbsp;&nbsp;plg = app.Createsmsreader();<br><br>
+				&nbsp;&nbsp;app.AddLayout(lay);<br>
+				}<br><br>
+
+				function CallPlugin()<br>
+				{<br>
+				&nbsp;&nbsp;alert(plg.GetVersion());<br>
+				}<br>
+			</div>
+			<div name="divCopy" align="right">
+				<a href="#" data-role="button" data-mini="true" data-inline="true" onclick="copy(examp1)">Copy All</a>
+				<a href="#" data-role="button" data-mini="true" data-inline="true" onclick="demo(examp1)">Run</a>
+			</div>
+		</div>
+
+		<h3>مثال 2 - قراءة الرسائل النصية</h3>
+		<div data-role="collapsible" data-collapsed="true" data-mini="true" data-theme="a" data-content-theme="b">
+			<h3>Example - Read SMS</h3>
+			<div id="examp2" style="font-size:70%">
+				app.LoadPlugin("smsreader");<br><br>
+
+				function OnStart()<br>
+				{<br>
+				&nbsp;&nbsp;lay = app.CreateLayout("Linear", "VCenter,FillXY");<br>
+				&nbsp;&nbsp;btn = app.CreateButton("Read SMS");<br>
+				&nbsp;&nbsp;btn.SetOnTouch(ReadSMS);<br>
+				&nbsp;&nbsp;lay.AddChild(btn);<br><br>
+				&nbsp;&nbsp;plg = app.Createsmsreader();<br><br>
+				&nbsp;&nbsp;app.AddLayout(lay);<br>
+				}<br><br>
+
+				function ReadSMS()<br>
+				{<br>
+				&nbsp;&nbsp;var result = plg.ReadSms();<br>
+				&nbsp;&nbsp;alert(result);<br>
+				}<br>
+			</div>
+			<div name="divCopy" align="right">
+				<a href="#" data-role="button" data-mini="true" data-inline="true" onclick="copy(examp2)">Copy All</a>
+				<a href="#" data-role="button" data-mini="true" data-inline="true" onclick="demo(examp2)">Run</a>
+			</div>
+		</div>
+	</div><!-- /content -->
+	
+</div><!-- /page -->
+
+</body>
+</html>
